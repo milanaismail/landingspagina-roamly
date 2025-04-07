@@ -677,7 +677,7 @@
   #cs-footer-269 {
     /* 60px - 100px top and bottom */
     padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
-    background-color: #1a1a1a;
+    background-color: var(--primary);
     /* Navigation Links */
     /* Contact Links */
   }
@@ -806,9 +806,9 @@
     gap: 0.75rem;
   }
   #cs-footer-269 .cs-social-link {
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: #4E4B66;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--secondary);
     border-radius: 50%;
     display: flex;
     justify-content: center;
