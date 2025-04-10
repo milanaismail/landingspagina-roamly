@@ -1,50 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--Swap our for actual link-->
-    <link rel="canonical" href="https://www.roamly.com/">
+    <link rel="canonical" href="https://www.roamly.com/" />
 
-    <meta name="description" content="Meta description for the page">
-    <meta name="keywords" content="toegankelijke reizen, rolstoelvriendelijke hotels, inclusief toerisme, reizen met beperking, rolstoelreizen">
+    <meta name="description" content="Meta description for the page" />
+    <meta
+      name="keywords"
+      content="toegankelijke reizen, rolstoelvriendelijke hotels, inclusief toerisme, reizen met beperking, rolstoelreizen"
+    />
 
     <!--Social Media Display-->
-    <meta property="og:title" content="Roamly | Toegankelijke reizen plannen met AI"/>
-    <meta property="og:description" content="Ontdek rolstoelvriendelijke hotels en activiteiten wereldwijd. Roamly maakt reizen zonder drempels mogelijk. Plan vandaag nog je trip!"/>
-    <meta property="og:url" content="https://www.roamly.com"/>
-    <meta property="og:image" content="https://www.roamly.com/assets/images/social.jpg"/>
+    <meta
+      property="og:title"
+      content="Roamly | Toegankelijke reizen plannen met AI"
+    />
+    <meta
+      property="og:description"
+      content="Ontdek rolstoelvriendelijke hotels en activiteiten wereldwijd. Roamly maakt reizen zonder drempels mogelijk. Plan vandaag nog je trip!"
+    />
+    <meta property="og:url" content="https://www.roamly.com" />
+    <meta
+      property="og:image"
+      content="https://www.roamly.com/assets/images/social.jpg"
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:image:secure_url" content="https://www.roamly.com/assets/images/social.jpg"/>
-    
+    <meta
+      property="og:image:secure_url"
+      content="https://www.roamly.com/assets/images/social.jpg"
+    />
+
     <!--Favicons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favicons/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicons/favicon-32x32.png?v1"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
     <!-- Preload -->
-    <link rel="preload" as="image" href="assets/images/logo-light.png">
-    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+    <link rel="preload" as="image" href="assets/images/logo-light.png" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-    rel="stylesheet"
-  />
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/assets/fonts/roboto-v29-latin-regular.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/assets/fonts/roboto-v29-latin-700.woff2"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="/css/core-styles.css">
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" href="/css/core-styles.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/dark.css" />
 
-    <title>Roamly | Toegankelijke reizen plannen met AI - Boek rolstoelvriendelijke hotels</title>
-</head>
-<body>
+    <title>
+      Roamly | Toegankelijke reizen plannen met AI - Boek rolstoelvriendelijke
+      hotels
+    </title>
+  </head>
+  <body>
     <!--Screen reader skip main nav-->
-    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+    <a class="skip" aria-label="skip to main content" href="#main"
+      >Click To Skip To Main Content</a
+    >
 
     <!-- ============================================ -->
     <!--                 Navigation                   -->
@@ -52,221 +98,259 @@
     <div id="nav-placeholder"></div>
 
     <script>
-        fetch('nav.html')
-             .then(response => response.text())
-             .then(data => {
-                 document.getElementById('nav-placeholder').innerHTML = data;
-     
-                 // Load nav.js AFTER nav.html is loaded
-                 const script = document.createElement('script');
-                 script.src = "/assets/js/nav.js";
-                 document.body.appendChild(script);
-             });
-     </script>
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+
+          // Load nav.js AFTER nav.html is loaded
+          const script = document.createElement("script");
+          script.src = "/assets/js/nav.js";
+          document.body.appendChild(script);
+        });
+    </script>
 
     <main id="main">
-        <!-- ============================================ -->
-        <!--                    Hero                      -->
-        <!-- ============================================ -->
+      <!-- ============================================ -->
+      <!--                    Hero                      -->
+      <!-- ============================================ -->
 
-        <section id="hero-81">
-            <div class="cs-container">
-                <div class="cs-subcontainer">
-                    <h1 class="cs-title">Ontdek de wereld zonder drempels met Roamly</h1>
-                    <p class="cs-text">
-                        De eerste AI-gestuurde reisplanner voor toegankelijk reizen.
-                    </p>
-                    <a href="" class="cs-button-solid">Probeer nu gratis</a>
-                </div>
-                <div>
-                    <img class="hero-image" src="./assets/images/mockup.png" alt="Mobiele mockup van Roamly app voor toegankelijke reizen">
-                </div>
-            </div>
-       
+      <section id="hero-81">
+        <div class="cs-container">
+          <div class="cs-subcontainer">
+            <h1 class="cs-title">
+              Ontdek de wereld zonder drempels met Roamly
+            </h1>
+            <p class="cs-text">
+              De eerste AI-gestuurde reisplanner voor toegankelijk reizen.
+            </p>
+            <a href="" class="cs-button-solid">Probeer nu gratis</a>
+          </div>
+          <div>
+            <img
+              class="hero-image"
+              src="./assets/images/mockup.png"
+              alt="Mobiele mockup van Roamly app voor toegankelijke reizen"
+            />
+          </div>
+        </div>
+      </section>
 
-   
-        </section>
+      <!-- ============================================ -->
+      <!--                   Services                   -->
+      <!-- ============================================ -->
 
-        <!-- ============================================ -->
-        <!--                   Services                   -->
-        <!-- ============================================ -->
-
-        <section id="h-services-81">
-            <ul class="cs-card-group">
-                <li class="cs-item">
-                    <picture class="cs-icon">
-                        <span class="material-symbols-outlined"> stars_2 </span>
-                    </picture>
-                    <h2 class="cs-title">AI-gestuurde reisplanning</h2>
-                    <p class="cs-text">
-                        Bespaar uren zoekwerk. Onze AI selecteert direct toegankelijke
-                        hotels, activiteiten en restaurants, volledig afgestemd op
-                        jouw noden.
-                    </p>
-                </li>
-                <li class="cs-item">
-                    <picture class="cs-icon">
-                        <span class="material-symbols-outlined"> groups </span>
-                    </picture>
-                    <h2 class="cs-title">Echte ervaringen, echte info</h2>
-                    <p class="cs-text">
-                        Alle toegankelijkheidsdata komt van echte reizigers en wordt
-                        grondig geverifieerd. Geen verrassingen onderweg.
-                    </p>
-                </li>
-                <li class="cs-item">
-                    <picture class="cs-icon">
-                        <span class="material-symbols-outlined"> road </span>
-                    </picture>
-                    <h2 class="cs-title">Boek met één klik</h2>
-                    <p class="cs-text">
-                        Klaar om te vertrekken? Boek eenvoudig je verblijf via onze
-                        geïntegreerde Booking.com-partnerschappen.
-                    </p>
-                </li>
-            </ul>
-        </section>                     
-                                
-        <!-- ============================================ -->
-        <!--                   About Us                   -->
-        <!-- ============================================ -->
-
-        <section id="RPsbs-580">
-            <div class="cs-container">
-                <picture class="cs-picture">
-                    
-                    <img loading="lazy" decoding="async" src="assets/images/illustration.png" alt="room" width="494" height="700">
-                </picture>
-                <div class="cs-content">
-                    <span class="cs-topper">Waarom Roamly?</span>
-                    <h2 class="cs-title">Reizen zonder drempels.</h2>
-                    <div class="text-content-item">
-
-                        <span class="material-symbols-outlined"> stars_2 </span>
-                        <div>
-                          <h3>AI-gestuurde reisplanning</h3>
-                          <p>
-                            Bespaar uren zoekwerk. Onze AI selecteert direct toegankelijke
-                            hotels, activiteiten en restaurants, volledig afgestemd op
-                            jouw noden.
-                          </p>
-                        </div>
-                      </div>
-                      <div class="text-content-item">
-                        <span class="material-symbols-outlined"> groups </span>
-                        <div>
-                          <h3>Echte ervaringen, echte info</h3>
-                          <p>
-                            Alle toegankelijkheidsdata komt van echte reizigers en wordt
-                            grondig geverifieerd. Geen verrassingen onderweg.
-                          </p>
-                        </div>
-                      </div>
-          
-                      <div class="text-content-item">
-                        <span class="material-symbols-outlined"> road </span>
-                        <div>
-                          <h3>Boek met één klik</h3>
-                          <p>
-                            Klaar om te vertrekken? Boek eenvoudig je verblijf via onze
-                            geïntegreerde Booking.com-partnerschappen.
-                          </p>
-                        </div>
-                      </div>
-                      <div class="text-content-item">
-                        <span class="material-symbols-outlined"> reviews </span>
-                        <div>
-                          <h3>Toegankelijkheid in detail</h3>
-          
-                          <p>
-                            Van parking en ingang tot interne navigatie en sanitair – wij
-                            geven je de info die echt telt.
-                          </p>
-                        </div>
-                      </div>
-                  </div>
-                 
-                  
-            </div>
-        </section>
-                                        
-        <!-- ============================================ -->
-        <!--             Service Highlight                -->
-        <!-- ============================================ -->
-
-        <section id="RPsbsr-580">
-            <div class="cs-container">
-                <picture class="cs-picture">
-       
-                    <img loading="lazy" decoding="async" src="assets/images/mockup-reviews.png" alt="room" width="494" height="700">
-                </picture>
-                <div class="cs-content">
-                    <span class="cs-topper">Wat we doen</span>
-                    <h2 class="cs-title">Plan je reis in minuten, niet in dagen</h2>
-                    <ul>
-                        <li>Toegankelijkheidsbeoordelingen van echte gebruikers.</li>
-                        <li>Valideerbare ervaringen en foto’s.</li>
-                        <li>Nooit meer twijfelen of een locatie écht toegankelijk is.</li>
-                       </ul>
-                    <a href="" class="cs-button-solid">Probeer nu</a>
-                </div>
-            </div>
-        </section>
-
-    
-        <section id="reviews-727">
-            <div class="cs-container">
-                <div class="cs-content">
-                    <span class="cs-topper">Testimonials</span>
-                    <h2 class="cs-title">Wat onze gebruikers zeggen</h2>
-                    <p class="cs-text">
-                        Bij Roamly vertrouw je op de kracht van de community.
-                    </p>
-                </div>
-                <ul class="cs-card-group">
-                    <li class="cs-item">
-                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
-                        <h3 class="cs-h3">Het is zo eenvoudig!</h3>
-                        <p class="cs-item-text">
-                            Roamly heeft mijn reiservaring compleet veranderd. Het is zo
-                            eenvoudig om toegankelijke opties te vinden!
-                                                </p>
-                        <span class="cs-name">Anna</span>
-                    </li>
-                    <li class="cs-item">
-                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
-                        <h3 class="cs-h3">Zonder zorgen op vakantie</h3>
-                        <p class="cs-item-text">
-                            "Dankzij Roamly kon ik eindelijk zonder zorgen op vakantie. Een
-                            echte aanrader!"
-                                                </p>
-                        <span class="cs-name">Daniel</span>
-                    </li>
-                </ul>
-            </div>
-        </section>
-                                
-
-        <!-- ============================================ -->
-        <!--                     CTA                      -->
-        <!-- ============================================ -->
-
-        <section id="cta-51">
-            <div class="cs-container">
-                <div class="cs-content">
-                    <h2 class="cs-title">Blijf als eerste op de hoogte</h2>
-                    <p class="cs-text">
-                        Wil jij exclusieve toegang tot Roamly en een gratis AI-trip bij onze lancering?
-                        <br> Schrijf je nu in en reis zonder zorgen!
-                                        </p>
-                    <a href="" class="cs-button-solid">Schrijf je nu in</a>
-                </div>
-            </div>
-            <!-- Background Image-->
-            <picture class="cs-picture">
-                <img loading="lazy" decoding="async" src="./assets/images/Image1.jpg" alt="cabinets" width="1920" height="1280" aria-hidden="true">
+      <section id="h-services-81">
+        <ul class="cs-card-group">
+          <li class="cs-item">
+            <picture class="cs-icon">
+              <span class="material-symbols-outlined"> stars_2 </span>
             </picture>
-        </section>                                          
+            <h2 class="cs-title">AI-gestuurde reisplanning</h2>
+            <p class="cs-text">
+              Bespaar uren zoekwerk. Onze AI selecteert direct toegankelijke
+              hotels, activiteiten en restaurants, volledig afgestemd op jouw
+              noden.
+            </p>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-icon">
+              <span class="material-symbols-outlined"> groups </span>
+            </picture>
+            <h2 class="cs-title">Echte ervaringen, echte info</h2>
+            <p class="cs-text">
+              Alle toegankelijkheidsdata komt van echte reizigers en wordt
+              grondig geverifieerd. Geen verrassingen onderweg.
+            </p>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-icon">
+              <span class="material-symbols-outlined"> road </span>
+            </picture>
+            <h2 class="cs-title">Boek met één klik</h2>
+            <p class="cs-text">
+              Klaar om te vertrekken? Boek eenvoudig je verblijf via onze
+              geïntegreerde Booking.com-partnerschappen.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ============================================ -->
+      <!--                   About Us                   -->
+      <!-- ============================================ -->
+
+      <section id="RPsbs-580">
+        <div class="cs-container">
+          <picture class="cs-picture">
+            <img
+              loading="lazy"
+              decoding="async"
+              src="assets/images/illustration.png"
+              alt="room"
+              width="494"
+              height="700"
+            />
+          </picture>
+          <div class="cs-content">
+            <span class="cs-topper">Waarom Roamly?</span>
+            <h2 class="cs-title">Reizen zonder drempels.</h2>
+            <div class="text-content-item">
+              <span class="material-symbols-outlined"> stars_2 </span>
+              <div>
+                <h3>AI-gestuurde reisplanning</h3>
+                <p>
+                  Bespaar uren zoekwerk. Onze AI selecteert direct toegankelijke
+                  hotels, activiteiten en restaurants, volledig afgestemd op
+                  jouw noden.
+                </p>
+              </div>
+            </div>
+            <div class="text-content-item">
+              <span class="material-symbols-outlined"> groups </span>
+              <div>
+                <h3>Echte ervaringen, echte info</h3>
+                <p>
+                  Alle toegankelijkheidsdata komt van echte reizigers en wordt
+                  grondig geverifieerd. Geen verrassingen onderweg.
+                </p>
+              </div>
+            </div>
+
+            <div class="text-content-item">
+              <span class="material-symbols-outlined"> road </span>
+              <div>
+                <h3>Boek met één klik</h3>
+                <p>
+                  Klaar om te vertrekken? Boek eenvoudig je verblijf via onze
+                  geïntegreerde Booking.com-partnerschappen.
+                </p>
+              </div>
+            </div>
+            <div class="text-content-item">
+              <span class="material-symbols-outlined"> reviews </span>
+              <div>
+                <h3>Toegankelijkheid in detail</h3>
+
+                <p>
+                  Van parking en ingang tot interne navigatie en sanitair – wij
+                  geven je de info die echt telt.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!--             Service Highlight                -->
+      <!-- ============================================ -->
+
+      <section id="RPsbsr-580">
+        <div class="cs-container">
+          <picture class="cs-picture">
+            <img
+              loading="lazy"
+              decoding="async"
+              src="assets/images/mockup-reviews.png"
+              alt="room"
+              width="494"
+              height="700"
+            />
+          </picture>
+          <div class="cs-content">
+            <span class="cs-topper">Wat we doen</span>
+            <h2 class="cs-title">Plan je reis in minuten, niet in dagen</h2>
+            <ul>
+              <li>Toegankelijkheidsbeoordelingen van echte gebruikers.</li>
+              <li>Valideerbare ervaringen en foto’s.</li>
+              <li>Nooit meer twijfelen of een locatie écht toegankelijk is.</li>
+            </ul>
+            <a href="" class="cs-button-solid">Probeer nu</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews-727">
+        <div class="cs-container">
+          <div class="cs-content">
+            <span class="cs-topper">Testimonials</span>
+            <h2 class="cs-title">Wat onze gebruikers zeggen</h2>
+            <p class="cs-text">
+              Bij Roamly vertrouw je op de kracht van de community.
+            </p>
+          </div>
+          <ul class="cs-card-group">
+            <li class="cs-item">
+              <img
+                class="cs-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg"
+                alt="quote icon"
+                aria-hidden="true"
+                width="40"
+                height="38"
+                loading="lazy"
+                decoding="async"
+              />
+              <h3 class="cs-h3">Het is zo eenvoudig!</h3>
+              <p class="cs-item-text">
+                Roamly heeft mijn reiservaring compleet veranderd. Het is zo
+                eenvoudig om toegankelijke opties te vinden!
+              </p>
+              <span class="cs-name">Anna</span>
+            </li>
+            <li class="cs-item">
+              <img
+                class="cs-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg"
+                alt="quote icon"
+                aria-hidden="true"
+                width="40"
+                height="38"
+                loading="lazy"
+                decoding="async"
+              />
+              <h3 class="cs-h3">Zonder zorgen op vakantie</h3>
+              <p class="cs-item-text">
+                "Dankzij Roamly kon ik eindelijk zonder zorgen op vakantie. Een
+                echte aanrader!"
+              </p>
+              <span class="cs-name">Daniel</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!--                     CTA                      -->
+      <!-- ============================================ -->
+
+      <section id="cta-51">
+        <div class="cs-container">
+          <div class="cs-content">
+            <h2 class="cs-title">Blijf als eerste op de hoogte</h2>
+            <p class="cs-text">
+              Wil jij exclusieve toegang tot Roamly en een gratis AI-trip bij
+              onze lancering?
+              <br />
+              Schrijf je nu in en reis zonder zorgen!
+            </p>
+            <a href="" class="cs-button-solid">Schrijf je nu in</a>
+          </div>
+        </div>
+        <!-- Background Image-->
+        <picture class="cs-picture">
+          <img
+            loading="lazy"
+            decoding="async"
+            src="./assets/images/travelling.jpeg"
+            alt="cabinets"
+            width="1920"
+            height="1280"
+            aria-hidden="true"
+          />
+        </picture>
+      </section>
     </main>
 
     <!-- ============================================ -->
@@ -275,59 +359,55 @@
 
     <div id="footer-placeholder"></div>
     <script>
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
-            });
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
     </script>
-                      
-                                
-
 
     <!--Gallery JS-->
     <script>
-        class CS_GalleryFilter {
-            filtersSelector = '.cs-button'
-            galleriesSelector = '.cs-gallery'
-            activeClass = 'cs-active'
-            hiddenClass = 'cs-hidden'
+      class CS_GalleryFilter {
+        filtersSelector = ".cs-button";
+        galleriesSelector = ".cs-gallery";
+        activeClass = "cs-active";
+        hiddenClass = "cs-hidden";
 
-            constructor() {
-                this.$galleries = document.querySelectorAll(this.galleriesSelector)
-                const $filters = document.querySelectorAll(this.filtersSelector)
+        constructor() {
+          this.$galleries = document.querySelectorAll(this.galleriesSelector);
+          const $filters = document.querySelectorAll(this.filtersSelector);
 
-                this.onClick($filters[0])
+          this.onClick($filters[0]);
 
-                for (const $filter of $filters) {
-                    $filter.addEventListener('click', () => this.onClick($filter))
-                }
-            }
-
-            onClick($filter) {
-                this.filter($filter.dataset.filter)
-
-                const { activeClass } = this
-
-                this.$activeFilter?.classList.remove(activeClass)
-                $filter.classList.add(activeClass)
-
-                this.$activeFilter = $filter
-            }
-
-            filter(filter) {
-                const showAll = filter == 'all'
-                const { hiddenClass } = this
-
-                for (const $gallery of this.$galleries) {
-                    const show = showAll || $gallery.dataset.category == filter
-                    $gallery.classList.toggle(hiddenClass, !show)
-                }
-            }
+          for (const $filter of $filters) {
+            $filter.addEventListener("click", () => this.onClick($filter));
+          }
         }
 
-        new CS_GalleryFilter()
-                                
+        onClick($filter) {
+          this.filter($filter.dataset.filter);
+
+          const { activeClass } = this;
+
+          this.$activeFilter?.classList.remove(activeClass);
+          $filter.classList.add(activeClass);
+
+          this.$activeFilter = $filter;
+        }
+
+        filter(filter) {
+          const showAll = filter == "all";
+          const { hiddenClass } = this;
+
+          for (const $gallery of this.$galleries) {
+            const show = showAll || $gallery.dataset.category == filter;
+            $gallery.classList.toggle(hiddenClass, !show);
+          }
+        }
+      }
+
+      new CS_GalleryFilter();
     </script>
-</body>
+  </body>
 </html>

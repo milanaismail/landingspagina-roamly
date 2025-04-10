@@ -1,197 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--Swap our for actual link-->
-    <link rel="canonical" href="https://www.website.com/">
+    <link rel="canonical" href="https://www.website.com/" />
 
-    <meta name="description" content="Meta description for the page">
-    <meta name="keywords" content="">
+    <meta name="description" content="Meta description for the page" />
+    <meta name="keywords" content="" />
 
     <!--Social Media Display-->
-    <meta property="og:title" content="Title that shows up on google searches"/>
-    <meta property="og:description" content="Meta description for the page"/>
+    <meta
+      property="og:title"
+      content="Title that shows up on google searches"
+    />
+    <meta property="og:description" content="Meta description for the page" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="Official link for that page (https://www.site.com)"/>
-    <meta property="og:image" content="/assets/images/social.jpg"/>
-    <meta property="og:image:secure_url" content="/assets/images/social.jpg"/>
+    <meta
+      property="og:url"
+      content="Official link for that page (https://www.site.com)"
+    />
+    <meta property="og:image" content="/assets/images/social.jpg" />
+    <meta property="og:image:secure_url" content="/assets/images/social.jpg" />
 
     <!--Favicons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favicons/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicons/favicon-32x32.png?v1"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
     <!-- Preload -->
-    <link rel="preload" as="image" href="assets/images/logo-light.png">
-    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
-
-    <link rel="stylesheet" href="/css/core-styles.css">
-    <link rel="stylesheet" href="/css/about.css">
-    <link rel="stylesheet" href="/css/dark.css">
+    <link rel="preload" as="image" href="assets/images/logo-light.png" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/assets/fonts/roboto-v29-latin-regular.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/assets/fonts/roboto-v29-latin-700.woff2"
+      crossorigin
+    />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="/css/core-styles.css" />
+    <link rel="stylesheet" href="/css/about.css" />
+    <link rel="stylesheet" href="/css/dark.css" />
 
     <title>Service Keyword Phrase | Company Name | City, State</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--Screen reader skip main nav-->
-    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+    <a class="skip" aria-label="skip to main content" href="#main"
+      >Click To Skip To Main Content</a
+    >
 
     <!-- ============================================ -->
     <!--                 Navigation                   -->
     <!-- ============================================ -->
 
-   
     <div id="nav-placeholder"></div>
 
     <script>
-      fetch('nav.html')
-           .then(response => response.text())
-           .then(data => {
-               document.getElementById('nav-placeholder').innerHTML = data;
-   
-               // Load nav.js AFTER nav.html is loaded
-               const script = document.createElement('script');
-               script.src = "/assets/js/nav.js";
-               document.body.appendChild(script);
-           });
-   </script>
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+
+          // Load nav.js AFTER nav.html is loaded
+          const script = document.createElement("script");
+          script.src = "/assets/js/nav.js";
+          document.body.appendChild(script);
+        });
+    </script>
 
     <main id="main">
-        <!-- ============================================ -->
-        <!--                   Banner                     -->
-        <!-- ============================================ -->
+      <!-- ============================================ -->
+      <!--                   Banner                     -->
+      <!-- ============================================ -->
 
-        <div id="banner-712">
-            <div class="cs-container">
-                <span class="cs-int-title">Over ons</span>
-            </div>
-            <!--Background Image-->
-            <picture class="cs-background">
-
-            </picture>
+      <div id="banner-712">
+        <div class="cs-container">
+          <span class="cs-int-title">Over ons</span>
         </div>
+        <!--Background Image-->
+        <picture class="cs-background"> </picture>
+      </div>
 
-        <!-- ============================================ -->
-        <!--                 Side By Side                 -->
-        <!-- ============================================ -->
+      <!-- ============================================ -->
+      <!--                 Side By Side                 -->
+      <!-- ============================================ -->
 
-        <section id="sbs-578">
-            <div class="cs-container">
-                <picture class="cs-picture">
-                    <img loading="lazy" decoding="async" src="assets/images/travelling.jpeg" alt="room" width="494" height="700">
+      <section id="sbs-578">
+        <div class="cs-container">
+          <picture class="cs-picture">
+            <img
+              loading="lazy"
+              decoding="async"
+              src="assets/images/travelling.jpeg"
+              alt="room"
+              width="494"
+              height="700"
+            />
+          </picture>
+          <div class="cs-content">
+            <span class="cs-topper">ONZE MISSIE</span>
+            <h2 class="cs-title">Reizen zonder grenzen</h2>
+            <p class="cs-text">
+              Reizen is vrijheid. Maar voor miljoenen mensen met een
+              mobiliteitsbeperking is reizen vaak nog steeds een uitdaging.
+              Roamly is ontstaan vanuit één simpel idee: Iedereen verdient het
+              om de wereld te ontdekken, zonder zorgen over toegankelijkheid.
+            </p>
+            <p class="cs-text">
+              Wij zijn een team van reizigers, dromers en technologie-experts.
+              Samen bouwen we aan de eerste AI-gestuurde reisplanner die
+              toegankelijkheid niet als extraatje ziet, maar als basis.
+            </p>
+          </div>
+        </div>
+      </section>
 
-                </picture>
-                <div class="cs-content">
-                    <span class="cs-topper">ONZE MISSIE</span>
-                    <h2 class="cs-title">Reizen zonder grenzen</h2>
-                    <p class="cs-text">
-                        Reizen is vrijheid. Maar voor miljoenen mensen met een mobiliteitsbeperking is reizen vaak nog steeds een uitdaging.
-                        Roamly is ontstaan vanuit één simpel idee:
-                        Iedereen verdient het om de wereld te ontdekken, zonder zorgen over toegankelijkheid.
-                                        </p>
-                    <p class="cs-text">
-                        Wij zijn een team van reizigers, dromers en technologie-experts. Samen bouwen we aan de eerste AI-gestuurde reisplanner die toegankelijkheid niet als extraatje ziet, maar als basis.
-                    </p>
-                </div>
-            </div>
-        </section>
+      <!-- ============================================ -->
+      <!--                 Why Choose                   -->
+      <!-- ============================================ -->
 
-        <!-- ============================================ -->
-        <!--                 Why Choose                   -->
-        <!-- ============================================ -->
-
-        <section id="why-choose-12">
-            <div class="cs-container">
-                <div class="cs-content">
-                    <span class="cs-topper">Experienced</span>
-                    <h2 class="cs-title">Onze belofte</h2>
-                
-                </div>
-                <ul class="cs-card-group">
-                    <li class="cs-item">
-                        <picture class="cs-picture">
-                            <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/sheild.svg" alt="heart icon" width="42" height="42" aria-hidden="true">
-                        </picture>
-                        <h3 class="cs-h3">Toegankelijkheid eerst</h3>
-                        <p class="cs-item-text">
-                            Geen vage omschrijvingen, maar concrete, eerlijke informatie.
-                        </p>
-                    </li>
-                    <li class="cs-item">
-                        <picture class="cs-picture">
-                            <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/toolbox.svg" alt="toolbox icon" width="42" height="42" aria-hidden="true">
-                        </picture>
-                        <h3 class="cs-h3">Slimme technologie</h3>
-                        <p class="cs-item-text">
-                            Met behulp van AI helpen we je sneller én beter toegankelijke hotels, activiteiten en restaurants vinden.
-                                                </p>
-                    </li>
-                    <li class="cs-item">
-                        <picture class="cs-picture">
-                            <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/ribbon.svg" alt="ribbon icon" width="32" height="42" aria-hidden="true">
-                        </picture>
-                        <h3 class="cs-h3">Ervaringen van échte reizigers</h3>
-                        <p class="cs-item-text">
-                            Bij Roamly draait het om echte ervaringen, niet om marketingpraatjes.
-                                    </p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="sbs-578">
-            <div class="cs-container">
-                <picture class="cs-picture">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/room.jpg">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/room.jpg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/room.jpg" alt="room" width="494" height="700">
-                </picture>
-                <div class="cs-content">
-                    <span class="cs-topper">Ons Verhaal</span>
-                    <h2 class="cs-title">Van frustratie naar doel</h2>
-                    <p class="cs-text">
-                        Alles begon met een frustratie.
-                        Reizen plannen voor mensen in een rolstoel bleek een zoektocht vol onzekerheden.
-                        Te weinig info, tegenstrijdige beoordelingen en verborgen obstakels...
-                        Daarom besloten we Roamly te bouwen: een platform dat toegankelijkheid centraal zet, ondersteund door technologie, en gedragen door een community van ervaringsdeskundigen.
-                                        </p>
-                
-                </div>
-            </div>
-        </section>
-
-        
-        
-                                
-        <!-- ============================================ -->
-        <!--                     CTA                      -->
-        <!-- ============================================ -->
-
-        <section id="cta-51">
-            <div class="cs-container">
-                <div class="cs-content">
-                    <h2 class="cs-title">Klaar om drempels te doorbreken?</h2>
-                    <p class="cs-text">
-                        Sluit je vandaag nog aan bij Roamly en ontdek de wereld zoals hij hoort te zijn: open en toegankelijk.
-                    </p>
-                    <a href="" class="cs-button-solid">Sign up</a>
-                </div>
-            </div>
-            <!-- Background Image-->
-            <picture class="cs-picture">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/cabinets-m.jpg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/cabinets.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/CTA/cabinets.jpg" alt="cabinets" width="1920" height="1280" aria-hidden="true">
+      <section id="why-choose-12">
+        <div class="cs-container">
+          <div class="cs-content">
+            <span class="cs-topper">Experienced</span>
+            <h2 class="cs-title">Onze belofte</h2>
+          </div>
+          <ul class="cs-card-group">
+            <li class="cs-item">
+              <picture class="cs-picture">
+                <span class="material-symbols-outlined"> reviews </span>
             </picture>
-        </section>                                          
+              <h3 class="cs-h3">Toegankelijkheid eerst</h3>
+              <p class="cs-item-text">
+                Geen vage omschrijvingen, maar concrete, eerlijke informatie.
+              </p>
+            </li>
+            <li class="cs-item">
+              <picture class="cs-picture">
+                <span class="material-symbols-outlined"> stars_2 </span>
+
+              </picture>
+              <h3 class="cs-h3">Slimme technologie</h3>
+              <p class="cs-item-text">
+                Met behulp van AI helpen we je sneller én beter toegankelijke
+                hotels, activiteiten en restaurants vinden.
+              </p>
+            </li>
+            <li class="cs-item">
+              <picture class="cs-picture">
+                <span class="material-symbols-outlined"> groups </span>
+              </picture>
+              <h3 class="cs-h3">Ervaringen van échte reizigers</h3>
+              <p class="cs-item-text">
+                Bij Roamly draait het om echte ervaringen, niet om
+                marketingpraatjes.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="sbs-578">
+        <div class="cs-container reversed">
+          <div class="cs-content">
+            <span class="cs-topper">Ons Verhaal</span>
+            <h2 class="cs-title">Van frustratie naar doel</h2>
+            <p class="cs-text">
+              Alles begon met een frustratie. Reizen plannen voor mensen in een
+              rolstoel bleek een zoektocht vol onzekerheden. Te weinig info,
+              tegenstrijdige beoordelingen en verborgen obstakels... Daarom
+              besloten we Roamly te bouwen: een platform dat toegankelijkheid
+              centraal zet, ondersteund door technologie, en gedragen door een
+              community van ervaringsdeskundigen.
+            </p>
+          </div>
+          <picture class="cs-picture">
+            <img
+              loading="lazy"
+              decoding="async"
+              src="assets/images/challenge.jpeg"
+              alt="room"
+              width="494"
+              height="700"
+            />
+          </picture>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!--                     CTA                      -->
+      <!-- ============================================ -->
+
+      <section id="cta-51">
+        <div class="cs-container">
+          <div class="cs-content">
+            <h2 class="cs-title">Klaar om drempels te doorbreken?</h2>
+            <p class="cs-text">
+              Sluit je vandaag nog aan bij Roamly en ontdek de wereld zoals hij
+              hoort te zijn: open en toegankelijk.
+            </p>
+            <a href="" class="cs-button-solid">Sign up</a>
+          </div>
+        </div>
+        <!-- Background Image-->
+        <picture class="cs-picture">
+            <img
+              loading="lazy"
+              decoding="async"
+              src="./assets/images/travelling.jpeg"
+              alt="cabinets"
+              width="1920"
+              height="1280"
+              aria-hidden="true"
+            />
+      </section>
     </main>
 
     <!-- ============================================ -->
@@ -199,14 +251,13 @@
     <!-- ============================================ -->
     <div id="footer-placeholder"></div>
     <script>
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
-            });
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
     </script>
-                                
 
     <script defer src="/assets/js/nav.js"></script>
-</body>
+  </body>
 </html>

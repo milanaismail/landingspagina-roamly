@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "title": "My First Blog",
+      "date": "01/01/2025",
+      "description": "Short description for listing page.",
+      "image": "/assets/images/travelling.jpeg",
+      "link": "/blog-detail.html?id=1",
+      "content": "<p>This is the full blog post content for the first blog post.</p><h2>Section Title</h2><p>More text...</p>"
+    },
+    {
+      "id": 2,
+      "title": "Another Adventure",
+      "date": "05/01/2025",
+      "description": "Another blog post description.",
+      "image": "/assets/images/travelling.jpeg",
+      "link": "/blog-detail.html?id=2",
+      "content": "<p>Second blog full content here...</p><h2>Subheading</h2><p>More text...</p>"
+    }
+  ]
+  

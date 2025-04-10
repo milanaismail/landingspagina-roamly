@@ -375,7 +375,7 @@
   #RPsbsr-580 .cs-picture:before {
     /* yellow box */
     content: '';
-    width: 50%;
+    width: 90%;
     height: 60%;
     background: var(--secondary);
     opacity: 1;
@@ -384,6 +384,7 @@
     /* 16px - 28px, wrapped in calc function to multiple by negative 1 and get a negative clamp value */
     bottom: calc(clamp(1rem, 2.4vw, 1.75rem)*-1);
     left: calc(clamp(1rem, 2.4vw, 1.75rem)*-1);
+    border-radius: 50%;
   }
 }
 /*-- -------------------------- -->
@@ -411,7 +412,7 @@
   #RPsbsr-580 .cs-picture:before {
     /* yellow box */
     content: '';
-    width: 50%;
+    width: 80%;
     height: 60%;
     background: var(--secondary);
     opacity: 1;

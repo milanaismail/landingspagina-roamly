@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="https://www.website.com/" />
+
+    <meta name="description" content="Meta description for the page" />
+    <meta name="keywords" content="" />
+
+    <!--Social Media Display-->
+    <meta
+      property="og:title"
+      content="Title that shows up on google searches"
+    />
+    <meta property="og:description" content="Meta description for the page" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="Official link for that page (https://www.site.com)"
+    />
+    <meta property="og:image" content="/assets/images/social.jpg" />
+    <meta property="og:image:secure_url" content="/assets/images/social.jpg" />
+
+    <!--Favicons-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicons/favicon-32x32.png?v1"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Preload -->
+    <link rel="preload" as="image" href="assets/images/logo-light.png" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/assets/fonts/roboto-v29-latin-regular.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/assets/fonts/roboto-v29-latin-700.woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="/css/core-styles.css" />
+    <link rel="stylesheet" href="/css/blog-detail.css" />
+    <link rel="stylesheet" href="/css/dark.css" />
+
+    <title>Service Keyword Phrase | Company Name | City, State</title>
+  </head>
+  <body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main"
+      >Click To Skip To Main Content</a
+    >
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <div id="nav-placeholder"></div>
+
+    <script>
+      fetch("../nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+
+          // Load nav.js AFTER nav.html is loaded
+          const script = document.createElement("script");
+          script.src = "/assets/js/nav.js";
+          document.body.appendChild(script);
+        });
+    </script>
+
+    <main id="main">
+      <!-- ============================================ -->
+      <!--                   Banner                     -->
+      <!-- ============================================ -->
+
+      <div id="banner-712">
+        <div class="cs-container">
+            <h1 class="cs-int-title" id="post-title">Loading...</h1>
+            <p class="cs-name" id="post-date">Loading date...</p>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background"> </picture>
+      </div>
+
+      <!-- ============================================ -->
+      <!--                   Reviews                    -->
+      <!-- ============================================ -->
+      <article>
+        <section id="reviews-607">
+          <div class="cs-container">
+            <div class="cs-card-group">
+                <div class="cs-item">
+                    <img id="post-image" src="" alt="Blog Image" />
+                    <div class="cs-content" id="post-content">
+                        Loading content...
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("../footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <script defer src="/assets/js/nav.js"></script>
+    <script>
+        // Helper function to get URL parameters
+        function getQueryParam(param) {
+          const urlParams = new URLSearchParams(window.location.search);
+          return urlParams.get(param);
+        }
+      
+        const postId = getQueryParam('id');
+      
+        fetch('./blog-posts.json') 
+        .then(response => response.json())
+          .then(posts => {
+            const post = posts.find(p => p.id == postId);
+            if (!post) {
+              document.getElementById('post-title').innerText = 'Post not found';
+              document.getElementById('post-content').innerHTML = '<p>Sorry, no content available.</p>';
+              return;
+            }
+      
+            document.title = post.title + ' | Your Site';
+            document.getElementById('post-title').innerText = post.title;
+            document.getElementById('post-date').innerText = post.date;
+            document.getElementById('post-image').src = post.image;
+            document.getElementById('post-image').alt = post.title;
+      
+            // Fill in the content
+            document.getElementById('post-content').innerHTML = `
+              ${post.content}
+            `;
+          })
+          .catch(error => console.error('Error loading blog post:', error));
+      </script>
+  </body>
+</html>

@@ -1,46 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--Swap our for actual link-->
-    <link rel="canonical" href="https://www.website.com/">
+    <link rel="canonical" href="https://www.website.com/" />
 
-    <meta name="description" content="Meta description for the page">
-    <meta name="keywords" content="">
+    <meta name="description" content="Meta description for the page" />
+    <meta name="keywords" content="" />
 
     <!--Social Media Display-->
-    <meta property="og:title" content="Title that shows up on google searches"/>
-    <meta property="og:description" content="Meta description for the page"/>
+    <meta
+      property="og:title"
+      content="Title that shows up on google searches"
+    />
+    <meta property="og:description" content="Meta description for the page" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="Official link for that page (https://www.site.com)"/>
-    <meta property="og:image" content="/assets/images/social.jpg"/>
-    <meta property="og:image:secure_url" content="/assets/images/social.jpg"/>
+    <meta
+      property="og:url"
+      content="Official link for that page (https://www.site.com)"
+    />
+    <meta property="og:image" content="/assets/images/social.jpg" />
+    <meta property="og:image:secure_url" content="/assets/images/social.jpg" />
 
     <!--Favicons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favicons/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicons/favicon-32x32.png?v1"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
     <!-- Preload -->
-    <link rel="preload" as="image" href="assets/images/logo-light.png">
-    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+    <link rel="preload" as="image" href="assets/images/logo-light.png" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/assets/fonts/roboto-v29-latin-regular.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/assets/fonts/roboto-v29-latin-700.woff2"
+      crossorigin
+    />
 
-    <link rel="stylesheet" href="/css/core-styles.css">
-    <link rel="stylesheet" href="/css/reviews.css">
-    <link rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" href="/css/core-styles.css" />
+    <link rel="stylesheet" href="/css/blog.css" />
+    <link rel="stylesheet" href="/css/dark.css" />
 
     <title>Service Keyword Phrase | Company Name | City, State</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--Screen reader skip main nav-->
-    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+    <a class="skip" aria-label="skip to main content" href="#main"
+      >Click To Skip To Main Content</a
+    >
 
     <!-- ============================================ -->
     <!--                 Navigation                   -->
@@ -49,149 +83,42 @@
     <div id="nav-placeholder"></div>
 
     <script>
-        fetch('nav.html')
-             .then(response => response.text())
-             .then(data => {
-                 document.getElementById('nav-placeholder').innerHTML = data;
-     
-                 // Load nav.js AFTER nav.html is loaded
-                 const script = document.createElement('script');
-                 script.src = "/assets/js/nav.js";
-                 document.body.appendChild(script);
-             });
-     </script>
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+
+          // Load nav.js AFTER nav.html is loaded
+          const script = document.createElement("script");
+          script.src = "/assets/js/nav.js";
+          document.body.appendChild(script);
+        });
+    </script>
 
     <main id="main">
-        <!-- ============================================ -->
-        <!--                   Banner                     -->
-        <!-- ============================================ -->
+      <!-- ============================================ -->
+      <!--                   Banner                     -->
+      <!-- ============================================ -->
 
-        <div id="banner-712">
-            <div class="cs-container">
-                <span class="cs-int-title">Reviews</span>
-            </div>
-            <!--Background Image-->
-            <picture class="cs-background">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg" alt="pills" width="1280" height="568" aria-hidden="true">
-            </picture>
+      <div id="banner-712">
+        <div class="cs-container">
+          <span class="cs-int-title">Blog</span>
         </div>
+        <!--Background Image-->
+        <picture class="cs-background"> </picture>
+      </div>
 
-        <!-- ============================================ -->
-        <!--                   Reviews                    -->
-        <!-- ============================================ -->
+      <!-- ============================================ -->
+      <!--                   Reviews                    -->
+      <!-- ============================================ -->
 
-        <section id="reviews-607">
-            <div class="cs-container">
-                <div class="cs-content">
-                    <span class="cs-topper">Testimonials</span>
-                    <h2 class="cs-title">Trusted by Thousand of People & Companies</h2>
-                    <p class="cs-text">
-                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
-                    </p>
-                </div>
-                <ul class="cs-card-group">
-                    <li class="cs-item">
-                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
-                        <h3 class="cs-h3">Loving the color!</h3>
-                        <p class="cs-item-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste vitae, aliquam temporibus modi libero dolorem rerum? Dolore soluta eligendi mollitia. Doloribus et exercitationem cupiditate?
-                        </p>
-                        <span class="cs-name">Daniel</span>
-                    </li>
-                    <li class="cs-item">
-                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
-                        <h3 class="cs-h3">Affordable</h3>
-                        <p class="cs-item-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste vitae, aliquam temporibus modi libero dolorem rerum? Dolore soluta eligendi mollitia. Doloribus et exercitationem cupiditate?
-                        </p>
-                        <span class="cs-name">Daniel</span>
-                    </li>
-                    <li class="cs-item">
-                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
-                        <h3 class="cs-h3">Professional and the best!</h3>
-                        <p class="cs-item-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste vitae, aliquam temporibus modi libero dolorem rerum? Dolore soluta eligendi mollitia. Doloribus et exercitationem cupiditate?
-                        </p>
-                        <span class="cs-name">Daniel</span>
-                    </li>
-                    <li class="cs-item">
-                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
-                        <h3 class="cs-h3">Loving the color!</h3>
-                        <p class="cs-item-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste vitae, aliquam temporibus modi libero dolorem rerum? Dolore soluta eligendi mollitia. Doloribus et exercitationem cupiditate?
-                        </p>
-                        <span class="cs-name">Daniel</span>
-                    </li>
-                    <li class="cs-item">
-                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
-                        <h3 class="cs-h3">Affordable</h3>
-                        <p class="cs-item-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste vitae, aliquam temporibus modi libero dolorem rerum? Dolore soluta eligendi mollitia. Doloribus et exercitationem cupiditate?
-                        </p>
-                        <span class="cs-name">Daniel</span>
-                    </li>
-                    <li class="cs-item">
-                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
-                        <h3 class="cs-h3">Professional and the best!</h3>
-                        <p class="cs-item-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste vitae, aliquam temporibus modi libero dolorem rerum? Dolore soluta eligendi mollitia. Doloribus et exercitationem cupiditate?
-                        </p>
-                        <span class="cs-name">Daniel</span>
-                    </li>
-                    <li class="cs-item">
-                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
-                        <h3 class="cs-h3">Loving the color!</h3>
-                        <p class="cs-item-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste vitae, aliquam temporibus modi libero dolorem rerum? Dolore soluta eligendi mollitia. Doloribus et exercitationem cupiditate?
-                        </p>
-                        <span class="cs-name">Daniel</span>
-                    </li>
-                    <li class="cs-item">
-                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
-                        <h3 class="cs-h3">Affordable</h3>
-                        <p class="cs-item-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste vitae, aliquam temporibus modi libero dolorem rerum? Dolore soluta eligendi mollitia. Doloribus et exercitationem cupiditate?
-                        </p>
-                        <span class="cs-name">Daniel</span>
-                    </li>
-                    <li class="cs-item">
-                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
-                        <h3 class="cs-h3">Professional and the best!</h3>
-                        <p class="cs-item-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste vitae, aliquam temporibus modi libero dolorem rerum? Dolore soluta eligendi mollitia. Doloribus et exercitationem cupiditate?
-                        </p>
-                        <span class="cs-name">Daniel</span>
-                    </li>
-                </ul>
-            </div>
-        </section>                            
-                                
-        <!-- ============================================ -->
-        <!--                     CTA                      -->
-        <!-- ============================================ -->
-
-        <section id="cta-51">
-            <div class="cs-container">
-                <div class="cs-content">
-                    <span class="cs-topper">Contact Us</span>
-                    <h2 class="cs-title">Get It Done With Us Today</h2>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis at sit pellentesque molestie.  Diam, adipiscing ultrices eu turpis gravida.
-                    </p>
-                    <a href="" class="cs-button-solid">Gret A Free Quote</a>
-                </div>
-            </div>
-            <!-- Background Image-->
-            <picture class="cs-picture">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/cabinets-m.jpg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/cabinets.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/CTA/cabinets.jpg" alt="cabinets" width="1920" height="1280" aria-hidden="true">
-            </picture>
-        </section>                                          
+      <section id="reviews-607">
+        <div class="cs-container">
+            <ul class="cs-card-group" id="blog-list">
+                <!-- Blogs will be dynamically inserted here -->
+              </ul>
+        </div>
+      </section>
     </main>
 
     <!-- ============================================ -->
@@ -200,17 +127,37 @@
 
     <div id="footer-placeholder"></div>
     <script>
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
-            });
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
     </script>
-                                
 
-    <script defer src="/assets/js/nav.js"></script>
-                                
+  <script>
+    fetch('./blog/blog-posts.json')
+      .then(response => response.json())
+      .then(posts => {
+        const blogList = document.getElementById('blog-list');
+        posts.forEach(post => {
+          const li = document.createElement('li');
+          li.classList.add('cs-item');
+          li.innerHTML = `
+            <img src="${post.image}" alt="${post.title}" />
+            <div class="cs-item-content">
+              <span class="cs-name">${post.date}</span>
+              <h3 class="cs-h3">${post.title}</h3>
+              <p class="cs-item-text">${post.description}</p>
+              <div class="cs-button-group">
+                <a class="cs-button-solid" href="/blog/blog-detail.html?id=${post.id}">Read More</a>
+              </div>
+            </div>
+          `;
+          blogList.appendChild(li);
+        });
+      })
+      .catch(error => console.error('Error loading blog posts:', error));
+  </script>
 
-    <script defer src="/assets/js/nav.js"></script>
-</body>
+  <script defer src="/assets/js/nav.js"></script>  </body>
 </html>
