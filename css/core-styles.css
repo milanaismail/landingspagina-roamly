@@ -645,7 +645,7 @@
     display: block;
     height: 100%;
     width: 100%;
-    background: #000;
+    background-color: var(--secondary);
     opacity: .75;
     top: 0;
     left: 0;
@@ -665,7 +665,8 @@
 @media only screen and (min-width: 48rem) {
   #banner-712 .cs-background:before {
     opacity: 1;
-    background: linear-gradient(90.01deg, rgba(0, 0, 0, 0.9) 16.86%, rgba(0, 0, 0, 0) 100%);
+    background-color: var(--secondary);
+
   }
 }
 /*-- -------------------------- -->
