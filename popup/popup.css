@@ -61,9 +61,12 @@
     background-color: transparent;
     border: none;
     color: #000;
+    padding: 0;
+}
+
+.popup-close-container{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     width: 100%;
-    cursor: pointer;
-    padding: 0;
 }
