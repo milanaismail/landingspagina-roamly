@@ -56,13 +56,12 @@
       href="/assets/fonts/roboto-v29-latin-700.woff2"
       crossorigin
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-      rel="stylesheet"
-    />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"></noscript>
 
     <link rel="stylesheet" href="/css/core-styles.css" />
-    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="preload" href="/css/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/css/index.css"></noscript>
     <script src="/popup/popup.js" defer></script>
     <link rel="stylesheet" href="/popup/popup.css" />
 
