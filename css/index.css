@@ -62,7 +62,7 @@
     /* Prevents white rectangle pseudos from overlapping the sections below */
     overflow: hidden;
     background: linear-gradient(135deg, #6C63FF 0%, #DEE3D6 100%);
-
+    min-height: 100%;
   }
 
 
@@ -99,6 +99,7 @@
     /* this makes the left edge sit at the 50% line at all times */
     left: 50%;
     z-index: 0;
+    visibility: visible;
   }
   #hero-81 .cs-background {
     width: 100%;
