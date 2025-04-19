@@ -3,6 +3,12 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+  .cs-item img{
+    width: 100%;
+    max-height: 230px;
+    object-fit: cover;
+    position: relative;
+  }
   .cs-button-group{
     display: flex;
     flex-direction: column;

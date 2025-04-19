@@ -42,10 +42,7 @@
       width: 100%;
       margin: 0;
       padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1.25rem;
+      
     }
     .cs-card-group img{
       width: 100%;
@@ -112,11 +109,7 @@
     #reviews-607 .cs-container {
       max-width: 80rem;
     }
-    #reviews-607 .cs-card-group {
-      /* we went grid on tablet so that we can have an even spaced section with this design. Flexbox has a hard time making this type of design work with even gaps. */
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
+  
     #reviews-607 .cs-item {
       grid-column: span 1;
       grid-row: span 1;
