@@ -156,9 +156,10 @@
             document.getElementById('post-image').alt = post.title;
       
             // Fill in the content
-            document.getElementById('post-content').innerHTML = `
-              ${post.content}
-            `;
+          document.getElementById('post-content').innerHTML = post.content
+  .split('\n\n')
+  .map(p => `<p>${p}</p>`)
+  .join('');
           })
           .catch(error => console.error('Error loading blog post:', error));
       </script>
